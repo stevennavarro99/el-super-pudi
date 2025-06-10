@@ -1,0 +1,144 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(152, 107, 74);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    color: red;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+nav{
+    text-align: center;
+}
+section h2{
+    color: chocolate;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 16px;
+}
+nav ul li a{
+    color: gold;
+    text-decoration: none;
+}
+main{
+    padding: 20px;
+}
+footer{
+    font-family: 'Times New Roman', Times, serif;
+    text-align:center;
+    background-color: rgb(211, 65, 65);
+}
+.producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.item{
+    padding: 20px;
+    border: 1px ;
+    text-align: center;
+    flex: 1;
+}
+li.item1{
+    color:rgb(216, 154, 31);
+    cursor: pointer;
+}
+li.item2{
+    color:rgb(131, 155, 2);
+    cursor: pointer;
+}
+li.item3{
+    color:rgb(230, 158, 133);
+    cursor: pointer;
+}
+li.item4{
+    color:rgb(246, 216, 151);
+    cursor: pointer;
+}
+li.item5{
+    color:rgb(215, 204, 150);
+    cursor: pointer;
+}
+li.item6{
+    color:rgb(105, 12, 0);
+    cursor: pointer;
+}
+li.item7{
+    color:rgb(235, 207, 137);
+    cursor: pointer;
+}
+li.item8{
+    color:rgb(234, 190, 70);
+    cursor: pointer;
+}
+li.item9{
+    color:rgb(126, 29, 38);
+    cursor: pointer;
+}
+li.item10{
+    color:rgb(224, 55, 30);
+    cursor: pointer;
+}
+section{
+    color: aqua;
+    transition: .3s ease;
+    padding: 20px 30px;
+    border-radius: 10;
+    
+}
+section:hover{
+    color:black;
+}
+.producto{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20PX;
+}
+@media (max-width: 1024px) {
+    .producto{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    nav ul{
+        flex-direction: column;
+    }
+}
+@media(max-width: 768px){
+    .producto{
+        grid-template-columns: 1fr;
+    }
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .item{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+@media(max-width: 480px){
+    .producto{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .item{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
